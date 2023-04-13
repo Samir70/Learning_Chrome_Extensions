@@ -1,5 +1,5 @@
 document.addEventListener("mouseup", async () => {
-    text = document.getSelection().anchorNode.data
+    text = document.getSelection().toString()
     console.log(text)
     if (text.length > 0) {
         const summary = await fetch("http://localhost:3000/viaopenai/getsummary?text=" + text, {
@@ -14,6 +14,6 @@ document.addEventListener("mouseup", async () => {
         // console.log(data)
         alert("Summary of the paragraph you clicked: \n" + data.summary)
     } else {
-        alert("What happened to the summary?" + text)
+        // alert("What happened to the summary?" + text)
     }
 });

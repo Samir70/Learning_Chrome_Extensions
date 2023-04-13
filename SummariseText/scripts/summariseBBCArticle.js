@@ -17,7 +17,6 @@ if (article === null) {
         let txt = await res.text()
         let obj = JSON.parse(txt)
         let summary = obj.summary
-        console.log("asdkfjashlk")
         let i = summary.lastIndexOf(".")
         if (i > 0) {
             summary = summary.slice(0, i + 1)

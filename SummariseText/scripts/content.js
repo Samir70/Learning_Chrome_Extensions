@@ -12,7 +12,7 @@ document.addEventListener("mouseup", async () => {
         });
         const data = JSON.parse(await summary.text());
         // console.log(data)
-        alert("Summary of highlighted text is: \n" + data.summary)
+        alert("Summary of the paragraph you clicked: \n" + data.summary)
     } else {
         alert("What happened to the summary?" + text)
     }

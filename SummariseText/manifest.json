@@ -10,7 +10,6 @@
         "128": "images/icon-128.png"
     },
     "action": {
-        "default_popup": "popup.html",
         "default_title": "Text Digester"
     },
     "permissions": [
@@ -26,5 +25,8 @@
                 "<all_urls>"
             ]
         }
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
 }
